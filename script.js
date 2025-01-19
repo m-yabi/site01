@@ -2,24 +2,35 @@
 
 const rellax = new Rellax(".image");
 
-var tabs = document.querySelectorAll(".tab");
-var contents = document.querySelectorAll(".tab-content");
+// var tabs = document.querySelectorAll(".tab");
+// var contents = document.querySelectorAll(".tab-content");
 
-tabs.forEach((tab) => {
-	tab.addEventListener("mouseenter", () => {
-		const target = tab.getAttribute("data-tab");
+// tabs.forEach((tab) => {
+// 	tab.addEventListener("mouseenter", () => {
+// 		const target = tab.getAttribute("data-tab");
 
-		tabs.forEach((t) => t.classList.remove("active"));
-		tab.classList.add("active");
+// 		tabs.forEach((t) => t.classList.remove("active"));
+// 		tab.classList.add("active");
 
-		contents.forEach((content) => {
-			content.classList.remove("active");
-			if (content.id === target) {
-				content.classList.add("active");
-			}
-		});
+// 		contents.forEach((content) => {
+// 			content.classList.remove("active");
+// 			if (content.id === target) {
+// 				content.classList.add("active");
+// 			}
+// 		});
+// 	});
+// });
+
+$(function () {
+	let tabs = $(".tab");
+	$(".tab").on("click", function () {
+		$(".active").removeClass("active");
+		$(this).addClass("active");
+		const index = tabs.index(this);
+		$(".tab-content").removeClass("active").eq(index).addClass("active");
 	});
 });
+
 const swiper = new Swiper(".swiper", {
 	slidesPerView: "auto",
 	spaceBetween: "3%", // スライド間のスペース
