@@ -2,6 +2,7 @@
 
 const rellax = new Rellax(".image", {
 	round: true, // 小数点以下を四捨五入
+	center: true,
 });
 window.addEventListener("scroll", function () {}, { passive: true });
 

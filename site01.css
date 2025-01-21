@@ -1432,14 +1432,14 @@ th {
     max-width: 400px;
     position: absolute;
     left: 0;
-    bottom: -350px;
+    bottom: -70px;
   }
   .right__image {
     max-width: 400px;
     position: absolute;
     width: 50%;
     right: 0;
-    top: -170px;
+    top: -50px;
   }
   .menu__image {
     width: 100%;
