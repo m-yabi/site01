@@ -1,7 +1,10 @@
 // $(function () {
 
-const rellax = new Rellax(".image");
+const rellax = new Rellax(".image", {
+	round: true, // 小数点以下を四捨五入
+});
 window.addEventListener("scroll", function () {}, { passive: true });
+
 // var tabs = document.querySelectorAll(".tab");
 // var contents = document.querySelectorAll(".tab-content");
 
