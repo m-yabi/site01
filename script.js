@@ -29,29 +29,7 @@ $(function () {
 		const index = tabs.index(this);
 		$(".tab-content").removeClass("active").eq(index).addClass("active");
 	});
-});
 
-const swiper = new Swiper(".swiper", {
-	slidesPerView: "auto",
-	spaceBetween: "3%", // スライド間のスペース
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-	breakpoints: {
-		// レスポンシブ設定
-		640: {
-			slidesPerView: 1,
-		},
-		768: {
-			slidesPerView: 2,
-		},
-		1024: {
-			slidesPerView: 3,
-		},
-	},
-});
-$(function () {
 	// スクロールイベントを監視
 	$(window).on("scroll", function () {
 		if ($(this).scrollTop() > 50) {
@@ -76,4 +54,38 @@ $(".page__link").on("click", function () {
 	$(".nav__items").removeClass("open");
 	$(".header__nav,.hamburger").removeClass("active");
 });
+const swiper = new Swiper(".swiper", {
+	slidesPerView: "auto",
+	centeredSlides: true, // 真ん中に配置
+	spaceBetween: "3%", // スライド間のスペース
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	breakpoints: {
+		// レスポンシブ設定
+		640: {
+			slidesPerView: 1,
+		},
+		768: {
+			slidesPerView: 2,
+		},
+		1024: {
+			slidesPerView: 3,
+		},
+	},
+});
+swiper.on("slideChange", () => {
+	// すべてのスライドからクラスを削除
+	document.querySelectorAll(".swiper-slide").forEach((slide) => {
+		slide.classList.remove("swiper-slide-active ");
+	});
+
+	// 真ん中のスライドにクラスを付与
+	const centerIndex = swiper.realIndex;
+	document
+		.querySelectorAll(".swiper-slide")
+		[centerIndex + 1]?.classList.add("swiper-slide-active ");
+});
+
 // });

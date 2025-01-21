@@ -386,6 +386,7 @@ th {
     background-color: #f0f0f0;
     scroll-behavior: smooth;
     scroll-padding-top: 115px;
+    font-family: "Noto Sans JP", serif;
   }
   .main-visual {
     height: 800px;
@@ -593,6 +594,7 @@ th {
     color: #5c6071;
     line-height: 2;
     font-size: 1.1rem;
+    font-family: "Noto Sans JP", serif;
   }
   .concept__image__area {
     position: relative;
@@ -990,6 +992,7 @@ th {
     z-index: 2;
     line-height: 1.5;
     letter-spacing: 1px;
+    font-family: "Noto Sans JP", serif;
   }
   .position {
     font-size: 14px;
@@ -1092,7 +1095,8 @@ th {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 60px;
+    font-family: "Noto Sans JP", serif;
   }
   .main-visual {
     height: 100vh;
@@ -1176,7 +1180,7 @@ th {
     transition: background-color 0.3s ease; /* スムーズな背景色変更 */
   }
   .header__inner {
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1202,8 +1206,8 @@ th {
     position: fixed;
     right: 16px;
     /* ボタンの大きさ  */
-    width: 58px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
     /* バーガーの線をボタン範囲の中心に配置 */
     display: flex;
     justify-content: center;
@@ -1213,8 +1217,7 @@ th {
   }
   .hamburger span {
     display: inline-block;
-    width: 44%;
-    height: 2px;
+    height: 1px;
     background: #fefeff;
     position: absolute;
     left: 50%;
@@ -1222,24 +1225,24 @@ th {
     transition: 0.5s;
   }
   .hamburger span:first-child {
-    top: 16px;
-  }
-  .hamburger span:nth-child(2) {
-    top: 24px;
+    top: 20px;
+    width: 55%;
   }
   .hamburger span:last-child {
-    top: 32px;
+    top: 30px;
+    left: 22px;
+    width: 40%;
   }
   .hamburger.active span:nth-child(1) {
-    top: 20px;
+    top: 25px;
+    left: 13px;
     transform: rotate(45deg);
     background: #fefeff;
   }
   .hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active span:nth-child(3) {
-    top: 20px;
+    top: 25px;
+    left: 13px;
+    width: 55%;
     transform: rotate(-45deg);
     background: #fefeff;
   }
@@ -1283,7 +1286,7 @@ th {
     align-items: center;
   }
   .menu__list:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 15px;
   }
   .reserve {
     width: 60%;
@@ -1318,7 +1321,7 @@ th {
   }
   section {
     padding-top: 80px;
-    padding-bottom: 240px;
+    padding-bottom: 100px;
   }
   .odd__section {
     background-image: url(section_bg.jpg);
@@ -1337,7 +1340,7 @@ th {
     position: absolute;
     z-index: 1;
     font-family: "Bellefair", serif;
-    font-size: 3rem;
+    font-size: 3.3rem;
     font-weight: normal;
     color: #949da5;
   }
@@ -1357,7 +1360,7 @@ th {
     position: absolute;
     z-index: 0;
     font-family: "Bellefair", serif;
-    font-size: 3.3rem;
+    font-size: 3.7rem;
   }
   .shadow__odd {
     top: 16%;
@@ -1365,21 +1368,27 @@ th {
     color: rgba(212, 203, 192, 0.5);
   }
   .concept__text {
-    width: 90%;
+    width: 95%;
     min-height: 200px;
-    max-width: 550px;
-    padding: 10px;
+    max-width: 390px;
+    padding: 6%;
     position: absolute;
-    bottom: -180px;
-    right: 0;
+    top: 50%;
+    left: 50%;
     z-index: 5;
     background-color: rgba(255, 255, 255, 0.8);
     color: #5c6071;
     line-height: 2;
     font-size: 0.95rem;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 300;
+    transform: translate(-50%, -50%);
   }
   .concept__image__area {
     position: relative;
+    background-image: url(27406019_m.jpg);
+    height: 300px;
+    background-size: cover;
   }
   .concept__image01 {
     width: 70%;
@@ -1422,14 +1431,14 @@ th {
     max-width: 400px;
     position: absolute;
     left: 0;
-    bottom: -500px;
+    bottom: -350px;
   }
   .right__image {
     max-width: 400px;
     position: absolute;
     width: 50%;
     right: 0;
-    top: -150px;
+    top: -170px;
   }
   .menu__image {
     width: 100%;
@@ -1561,7 +1570,7 @@ th {
     width: 100%;
   }
   .content {
-    padding: 15px;
+    padding: 5%;
     text-align: center;
     background-color: #949da5;
     color: white;
@@ -1682,15 +1691,15 @@ th {
     transition: opacity 0.5s ease;
     z-index: 1;
   }
-  .staff-swiper .image-container:hover::before {
-    opacity: 0; /* フィルターを解除 */
-  }
-  .staff-swiper .image-container img {
+  .staff-swiper img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     transition: transform 0.5s ease;
+  }
+  .staff-swiper .swiper-slide-active .image-container::before {
+    opacity: 0; /* グレーアウトを解除 */
   }
   .staff__button__area {
     display: block;
@@ -1770,13 +1779,13 @@ th {
     z-index: 2;
     line-height: 1.5;
     letter-spacing: 1px;
+    font-family: "Noto Sans JP", serif;
   }
   .position {
     font-size: 14px;
   }
-  /* カラーフィルターを擬似要素で作成 */
   .salon__section {
-    margin-top: -450px;
+    margin-top: -300px;
   }
   .salon {
     margin-top: 210px;

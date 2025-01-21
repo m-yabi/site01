@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Bellefair&family=Noto+Sans+JP:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/ress@4.0.0/dist/ress.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		/>
+
+		<link rel="stylesheet" href="site01.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header class="header pc-only">
+			<h1 class="logo__area">
+				<a href="#"><img class="logo js-before" src="logo.svg" alt="logo" /></a>
+				<a href="#"><img class="logo js-after" src="logo2.svg" alt="logo" /></a>
+			</h1>
+			<nav class="global-nav">
+				<ul class="nav-menu">
+					<li class="menu__list">
+						<a class="page__link" href="#concept">CONCEPT</a>
+					</li>
+					<li class="menu__list">
+						<a class="page__link" href="#menu">MENU</a>
+					</li>
+					<li class="menu__list">
+						<a class="page__link" href="#gallery">GALLERY</a>
+					</li>
+					<li class="menu__list">
+						<a class="page__link" href="#column">COLUMN</a>
+					</li>
+					<li class="menu__list">
+						<a class="page__link" href="#staff">STAFF</a>
+					</li>
+					<li class="menu__list">
+						<a class="page__link" href="#salon">SALON</a>
+					</li>
+					<li class="menu__list reserve">
+						<a class="page__link"
+							>RESERVE<br /><span class="small">ご予約はこちら</span></a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<header class="header sp-only">
+			<div class="header__inner">
+				<h1 class="logo__area">
+					<a href="#"
+						><img class="logo js-before" src="logo.svg" alt="logo"
+					/></a>
+					<a href="#"
+						><img class="logo js-after" src="logo2.svg" alt="logo"
+					/></a>
+				</h1>
+
+				<nav class="header__nav nav" id="js-nav">
+					<ul class="nav__items">
+						<li class="menu__list">
+							<a class="page__link" href="#concept">CONCEPT</a>
+						</li>
+						<li class="menu__list">
+							<a class="page__link" href="#menu">MENU</a>
+						</li>
+						<li class="menu__list">
+							<a class="page__link" href="#gallery">GALLERY</a>
+						</li>
+						<li class="menu__list">
+							<a class="page__link" href="#column">COLUMN</a>
+						</li>
+						<li class="menu__list">
+							<a class="page__link" href="#staff">STAFF</a>
+						</li>
+						<li class="menu__list">
+							<a class="page__link" href="#salon">SALON</a>
+						</li>
+						<li class="menu__list reserve">
+							<a class="page__link"
+								>RESERVE<br /><span class="small">ご予約はこちら</span></a
+							>
+						</li>
+					</ul>
+				</nav>
+
+				<button class="hamburger" id="js-hamburger">
+					<span class="hamburger__line"></span>
+					<!-- <span class="hamburger__line"></span> -->
+					<span class="hamburger__line"></span>
+				</button>
+			</div>
+		</header>
+
+		<!-- <div class="main-visual"> -->
+		<!-- 切り替える人物画像1 -->
+		<div class="main-visual">
+			<div class="fade-section person1">
+				<img src="person1-1.jpg" alt="Person 1" />
+				<img src="person1-2.jpg" alt="Person 2" />
+				<img src="person1-3.jpg" alt="Person 3" />
+			</div>
+
+			<!-- 切り替える人物画像2 -->
+			<div class="fade-section person2">
+				<img src="person2-1.jpg" alt="Person 1" />
+				<img src="person2-2.jpg" alt="Person 2" />
+				<img src="person2-3.jpg" alt="Person 3" />
+			</div>
+			<div class="text-section">
+				<p class="top-text">Beauty that Transforms Lives</p>
+				<p class="bottom-text">
+					Here is where<br />Your beauty and potential<br />Truly shine
+				</p>
+			</div>
+			<!-- </div> -->
+		</div>
+		<main>
+			<section id="concept" class="concept__section odd__section">
+				<div class="inner concept__inner">
+					<div class="title__area">
+						<h2 class="section__title odd">
+							<span class="number">01</span> CONCEPT
+						</h2>
+						<p class="title__shadow shadow__odd">
+							<span class="number">01</span> CONCEPT
+						</p>
+					</div>
+					<div class="concept__image__area">
+						<p class="concept__text">
+							落ち着いたモダンな空間で過ごすひととき。<br />
+							心からリラックスしていただけるよう、<br />あなたらしい美しさを引き出す施術を行います。<br />
+							コミュニケーションを大切にし、<br />心のこもったひとときをご提供します。
+						</p>
+						<img
+							class="concept__image01 pc-only"
+							src="27406019_m.jpg"
+							alt="サロン内装"
+						/>
+						<!-- <img
+							class="concept__image02"
+							src="AdobeStock_189405352.jpg"
+							alt="カット風景"
+						/> -->
+					</div>
+				</div>
+			</section>
+			<section id="menu" class="menu__section even__section">
+				<div class="inner">
+					<div class="title__area">
+						<h2 class="section__title even">
+							<span class="number">02</span> MENU
+						</h2>
+						<p class="title__shadow shadow__even">
+							<span class="number">02</span> MENU
+						</p>
+					</div>
+					<div class="menu__image__area">
+						<img class="center__image" src="menu_center.jpg" />
+
+						<div class="image left__image" data-rellax-speed="2">
+							<a class="menu__link" href="#">
+								<img class="menu__image left pc-only" src="hair-image.png" />
+								<img class="menu__image left sp-only" src="hair-image_sp.png" />
+								<p class="detail__button menu">DETAIL</p></a
+							>
+						</div>
+						<div class="image right__image" data-rellax-speed="-1">
+							<a class="menu__link" href="#">
+								<img class="menu__image right pc-only" src="eye.png" />
+								<img class="menu__image right sp-only" src="eye_sp.png" />
+								<p class="detail__button menu">DETAIL</p></a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="gallery" class="gallery__section odd__section">
+				<div class="inner">
+					<div class="title__area">
+						<h2 class="section__title odd">
+							<span class="number">03</span> GALLERY
+						</h2>
+						<p class="title__shadow shadow__odd">
+							<span class="number">03</span> GALLERY
+						</p>
+					</div>
+					<ul class="tabs">
+						<li class="tab active" data-tab="short">SHORT</li>
+						<li class="tab" data-tab="medium">MEDIUM</li>
+						<li class="tab" data-tab="long">LONG</li>
+					</ul>
+
+					<div class="tab-content active" id="short">
+						<img class="style-image" src="short1.jpg" alt="Short Style" />
+						<img class="style-image" src="short2.jpg" alt="Short Style" />
+						<img class="style-image" src="short3.jpg" alt="Short Style" />
+						<img class="style-image" src="short4.jpg" alt="Short Style" />
+					</div>
+
+					<div class="tab-content" id="medium">
+						<img class="style-image" src="medium1.jpg" alt="Medium Style" />
+						<img class="style-image" src="medium2.jpg" alt="Medium Style" />
+						<img class="style-image" src="medium3.jpg" alt="Medium Style" />
+						<img class="style-image" src="medium4.jpg" alt="Medium Style" />
+					</div>
+
+					<div class="tab-content" id="long">
+						<img class="style-image" src="long1.jpg" alt="Long Style" />
+						<img class="style-image" src="long2.jpg" alt="Long Style" />
+						<img class="style-image" src="long3.jpg" alt="Long Style" />
+						<img class="style-image" src="long4.jpg" alt="Long Style" />
+					</div>
+					<a class="view__link" href="#">VIEW ALL</a>
+				</div>
+			</section>
+			<section id="column" class="column__section even__section">
+				<div class="inner">
+					<div class="title__area">
+						<h2 class="section__title even">
+							<span class="number">04</span> COLUMN
+						</h2>
+						<p class="title__shadow shadow__even">
+							<span class="number">04</span> COLUMN
+						</p>
+					</div>
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img class="column__image" src="column1.jpg" alt="Image 1" />
+								<div class="content">
+									<div class="category__area">
+										<span class="date">2024.10.01</span>
+										<span class="category">news</span>
+									</div>
+									<div class="title">金木犀シャンプーが入荷☆</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img class="column__image" src="colmn2.jpg" alt="Image 2" />
+								<div class="content">
+									<div class="category__area">
+										<span class="date">2024.10.01</span>
+										<span class="category">other</span>
+									</div>
+									<div class="title">おすすめのヘッドスパをご紹介！</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img class="column__image" src="column3.jpg" alt="Image 3" />
+								<div class="content">
+									<div class="category__area">
+										<span class="date">2024.10.01</span>
+										<span class="category">other</span>
+									</div>
+									<div class="title">ギフトにも！お手入れグッズ特集</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img class="column__image" src="column4.jpg" alt="Image 3" />
+								<div class="content">
+									<div class="category__area">
+										<span class="date">2024.10.01</span>
+										<span class="category">news</span>
+									</div>
+									<div class="title">SNSで話題のまつ毛美容液入荷！</div>
+								</div>
+							</div>
+						</div>
+						<!-- Add Navigation -->
+						<div class="button__area">
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="staff" class="staff__section odd__section">
+				<div class="inner">
+					<div class="title__area">
+						<h2 class="section__title odd">
+							<span class="number">05</span> STAFF
+						</h2>
+						<p class="title__shadow shadow__odd">
+							<span class="number">05</span> STAFF
+						</p>
+					</div>
+
+					<div class="swiper staff-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="image-container">
+									<img src="staff01.jpg" alt="Stylist Yuto Onodera" />
+									<div class="text-overlay">
+										<span class="position">STYLIST</span><br />YUTO ONODERA
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="image-container">
+									<img src="staff02.jpg" alt="Stylist Yuko Sasaki" />
+									<div class="text-overlay">
+										<span class="position">STYLIST</span><br />YUKO SASAKI
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="image-container">
+									<img src="staff03.jpg" alt="Stylist Megumi Hayasaka" />
+									<div class="text-overlay">
+										<span class="position">STYLIST</span><br />MEGUMI HAYASAKA
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="image-container">
+									<img src="staff04.jpg" alt="Stylist Megumi Hayasaka" />
+									<div class="text-overlay">
+										<span class="position">STYLIST</span><br />MEGUMI HAYASAKA
+									</div>
+								</div>
+							</div>
+							<!-- 他のスライドも追加可能 -->
+						</div>
+						<!-- ナビゲーション -->
+						<div class="button__area staff__button__area">
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="salon__section even__section">
+				<div class="inner">
+					<div class="title__area salon">
+						<h2 id="salon" class="section__title even">
+							<span class="number">06</span> SALON
+						</h2>
+						<p class="title__shadow shadow__even">
+							<span class="number">06</span> SALON
+						</p>
+					</div>
+					<ul class="salon__list">
+						<li class="salon__item">
+							<div class="salon__image__box">
+								<img
+									class="salon__image"
+									src="27406019_m.jpg"
+									alt="Élan 青山店"
+								/>
+								<p class="text-overlay">
+									青山<span class="position"> - AOYAMA -</span>
+								</p>
+								<p class="detail__button shop">DETAIL</p>
+							</div>
+						</li>
+						<li class="salon__item">
+							<div class="salon__image__box">
+								<img
+									class="salon__image"
+									src="27406019_m.jpg"
+									alt="Élan 代官山店"
+								/>
+								<p class="text-overlay">
+									代官山<span class="position"> - DAIKANYAMA -</span>
+								</p>
+								<p class="detail__button shop">DETAIL</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="footer__menu">
+					<img class="footer__logo" src="logo.svg" alt="logo" />
+					<nav class="global-nav">
+						<ul class="nav-menu footer__nav">
+							<li class="menu__list">
+								<a class="page__link">CONCEPT</a>
+							</li>
+							<li class="menu__list">
+								<a class="page__link">MENU</a>
+							</li>
+							<li class="menu__list">
+								<a class="page__link">GALLERY</a>
+							</li>
+							<li class="menu__list">
+								<a class="page__link">COLUMN</a>
+							</li>
+							<li class="menu__list">
+								<a class="page__link">STAFF</a>
+							</li>
+							<li class="menu__list">
+								<a class="page__link">SALON</a>
+							</li>
+						</ul>
+						<ul class="sns-menu">
+							<li class="menu__list">
+								<a class="page__link" href="#"
+									><i class="fab fa-instagram fa-2x"></i
+								></a>
+							</li>
+							<li class="menu__list">
+								<a class="page__link" href="#"
+									><i class="fab fa-twitter fa-2x"></i
+								></a>
+							</li>
+							<li class="menu__list">
+								<a class="page__link" href="#"
+									><i class="fab fa-youtube fa-2x"></i
+								></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</footer>
+		</main>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
