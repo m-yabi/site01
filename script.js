@@ -1,7 +1,7 @@
 // $(function () {
 
 const rellax = new Rellax(".image");
-
+window.addEventListener("scroll", function () {}, { passive: true });
 // var tabs = document.querySelectorAll(".tab");
 // var contents = document.querySelectorAll(".tab-content");
 
