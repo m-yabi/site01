@@ -642,14 +642,14 @@ th {
     max-width: 400px;
     position: absolute;
     left: 0;
-    bottom: -100px;
+    bottom: -70px;
   }
   .right__image {
     max-width: 400px;
     position: absolute;
     width: 45%;
     right: 0;
-    top: -30px;
+    top: -10px;
   }
   .menu__image {
     width: 100%;
